@@ -90,3 +90,29 @@ class Hamster {
   for (let i = 0; i < 2; i++) { timmy.exercise();}
   
   console.log(timmy);
+  //Chef Make Dinners
+//Chef should be a factory of Dinner
+// Add a constructor to dinner that sets the string properties, appetizer, entree and dessert.
+// Add a method on chef that takes three arguments and returns a new Dinner based on those arguments.
+// Have the Chef create 3 dinners, log the dinners
+class Dinner {
+    constructor(appetizer, entree, dessert) {
+      this.appetizer = appetizer
+      this.entree = entree
+      this.dessert = dessert
+    }
+    }
+    class Chef {
+    makeDinner(appetizer, entree, dessert) {
+      return new Dinner(appetizer, entree, dessert);
+    }
+    }
+    
+    const chef = new Chef();
+    const dinner1 = chef.makeDinner('salad', 'steak', 'cake');
+    const dinner2 = chef.makeDinner('soup', 'chicken', 'pie');
+    const dinner3 = chef.makeDinner('springroll', 'noodle', 'mango');
+    console.log(dinner1);
+    console.log(dinner2);
+    console.log(dinner3);
+    
